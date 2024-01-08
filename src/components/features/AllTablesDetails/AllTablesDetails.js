@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux/es/hooks/useSelector';
 import { Link } from 'react-router-dom';
 import { Col, Row, Button } from "react-bootstrap";
 import PropTypes from "prop-types";
-import { getTableById } from '../../../redux/tableReducer';
+import { getTableById } from '../../../redux/tablesRedux';
 
 const AllTablesDetails = props => {
 

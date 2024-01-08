@@ -1,4 +1,4 @@
-import { getAllTables } from "../../../redux/tableReducer";
+import { getAllTables } from "../../../redux/tablesRedux";
 import Spinner from 'react-bootstrap/Spinner';
 import { useSelector } from 'react-redux';
 import AllTablesDetails from "../../features/AllTablesDetails/AllTablesDetails";

@@ -1,10 +1,10 @@
 import { createStore, compose, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import initialState from './initialState';
-import tableReducer from './tableReducer';
+import tablesReducer from './tablesRedux';
 
 const store = createStore(
-  tableReducer,
+  tablesReducer,
   initialState,
 
   compose(

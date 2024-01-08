@@ -33,15 +33,20 @@ export const editTableRequest = (thisTable) => {
   };
 };
 
-const tableReducer = (statePart = [], action) => {
+const tablesReducer = (statePart = { tables: [] }, action) => {
   switch (action.type) {
     case UPDATE_TABLES:
       return { ...statePart, tables: action.payload};
       case EDIT_TABLE:
-      return  statePart.tables.map(table => table.id===action.payload.id ? {...table,...action.payload} : table);
+        return {
+          ...statePart,
+          tables: statePart.tables.map((table) =>
+            table.id === action.payload.id ? { ...table, ...action.payload } : table
+          ),
+        };
     default:
       return statePart;
   };
 };
 
-export default tableReducer;
+export default tablesReducer;

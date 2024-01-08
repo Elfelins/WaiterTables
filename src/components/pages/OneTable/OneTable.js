@@ -1,7 +1,7 @@
 import { useParams } from 'react-router';
 import { useSelector } from 'react-redux/es/hooks/useSelector';
 import { Navigate } from 'react-router-dom';
-import { getTableById } from '../../../redux/tableReducer';
+import { getTableById } from '../../../redux/tablesRedux';
 import OneTableDetails from '../../features/OneTableDetails/OneTableDetails';
 
 const OneTable = () => {

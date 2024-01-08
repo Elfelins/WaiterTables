@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import { fetchTables } from './redux/tableReducer';
+import { fetchTables } from './redux/tablesRedux';
 import Header from './components/views/Header/Header';
 import Footer from './components/views/Footer/Footer';
 import Error404 from './components/common/Error404/Error404';

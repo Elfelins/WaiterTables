@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Button, Col, Row } from 'react-bootstrap';
 import { useParams } from 'react-router';
 import { useSelector } from 'react-redux/es/hooks/useSelector';
-import { getTableById, editTableRequest } from '../../../redux/tableReducer';
+import { getTableById, editTableRequest } from '../../../redux/tablesRedux';
 
 const OneTableDetails = () => {
 
